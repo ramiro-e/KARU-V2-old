@@ -1,7 +1,0 @@
-{
-    "functions": {
-      "update-popularity": {
-        "cron": "0 0 * * *"
-      }
-    }
-}
