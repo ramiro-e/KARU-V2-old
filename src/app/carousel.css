@@ -1,0 +1,68 @@
+
+
+.carousel-images {
+    position: relative;
+    width: 300px; /* Adjust the width as per your requirements */
+    height: 0;
+    padding-bottom: 100%; /* This creates a square container with a 1:1 aspect ratio */
+    margin-bottom: 10px;
+}
+
+.carousel-images img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.image-container {
+    position: relative;
+    width: 300px; /* Adjust the width as per your requirements */
+    height: 0;
+    padding-bottom: 100%; /* This creates a square container with a 1:1 aspect ratio */
+}
+  
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-images img.active {
+    opacity: 1;
+}
+
+.carousel-thumbnails {
+    display: flex;
+
+}
+
+.thumbnail {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.thumbnail:hover {
+    opacity: 1;
+}
+
+.thumbnail.active {
+    opacity: 1;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

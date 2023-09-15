@@ -1,0 +1,42 @@
+.masonry-holder{
+    column-count: 1;
+    column-gap: 5px;
+    margin: 0 auto;
+}
+
+.masonry-block{
+    display: inline-block;
+    padding: 5px;
+    margin: 0 0 15px;
+    width: auto;
+    box-sizing: border-box;
+    transition: transform ease 1s, opacity ease 1s;
+}
+
+
+.anker-down{
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+.masonry-block img{
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .masonry-holder{
+        column-count: 2;
+        column-gap: 10px;
+    }
+    .masonry-block{
+        padding: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    .masonry-holder{
+        column-count: 3;
+        max-width: 992px;
+    }
+
+}
